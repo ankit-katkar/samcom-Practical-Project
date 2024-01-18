@@ -1,0 +1,101 @@
+<div class="container">
+    <div *ngIf="!showLogIn">
+       <div class="card">
+        <div class="card-body">
+            <form [formGroup]="userSignUp" (ngSubmit)="SignIn(userSignUp.value)">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First name"
+                    formControlName="FirstName"
+                    [ngClass]="{'is-invalid': SignupSubmitted && singUpf['FirstName'].errors}">
+                    <div *ngIf="SignupSubmitted && singUpf['FirstName'].errors" class="invalid-feedback">
+                        <div class="error" *ngIf="singUpf['FirstName'].errors['required']">
+                            Please Enter Your First Name
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last name"
+                    formControlName="LastName"
+                    [ngClass]="{'is-invalid': SignupSubmitted && singUpf['LastName'].errors}">
+                    <div *ngIf="SignupSubmitted && singUpf['LastName'].errors" class="invalid-feedback">
+                        <div class="error" *ngIf="singUpf['LastName'].errors['required']">
+                            Please Enter Your Last Name
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Contact Number"
+                    formControlName="Number"
+                    [ngClass]="{'is-invalid': SignupSubmitted && singUpf['Number'].errors}">
+                    <div *ngIf="SignupSubmitted && singUpf['Number'].errors" class="invalid-feedback">
+                        <div class="error" *ngIf="singUpf['Number'].errors['required']">
+                            Please Enter Your Valid Contact Number
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email"
+                    formControlName="Email"
+                    [ngClass]="{'is-invalid': SignupSubmitted && singUpf['Email'].errors}">
+                    <div *ngIf="SignupSubmitted && singUpf['Email'].errors" class="invalid-feedback">
+                        <div class="error" *ngIf="singUpf['Email'].errors['required']">
+                            Please Enter Your Valid Email Address
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password"
+                    formControlName="Password"
+                    [ngClass]="{'is-invalid': SignupSubmitted && singUpf['Password'].errors}">
+                    <div *ngIf="SignupSubmitted && singUpf['Password'].errors" class="invalid-feedback">
+                        <div class="error" *ngIf="singUpf['Password'].errors['required']">
+                            Please Enter Your Password
+                        </div>
+                    </div>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <p (click)="onLogIn()">Do you have any accouent <span>LogIn</span></p>
+            </form>
+        </div>
+       </div>
+    </div>
+
+    <div *ngIf="showLogIn">
+        <div class="card">
+         <div class="card-body">
+             <form [formGroup]="userLogIn" (ngSubmit)="LogIn(userLogIn.value)">
+
+                 <div class="form-group">
+                     <input type="email" class="form-control" placeholder="Email"
+                     formControlName="Email"
+                     [ngClass]="{'is-invalid': LogInSubmitted && LogInf['Email'].errors}">
+                     <div *ngIf="LogInSubmitted && LogInf['Email'].errors" class="invalid-feedback">
+                         <div class="error" *ngIf="LogInf['Email'].errors['required']">
+                             Please Enter Your Valid Email Address
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="form-group">
+                     <input type="password" class="form-control" placeholder="Password"
+                     formControlName="Password"
+                     [ngClass]="{'is-invalid': LogInSubmitted && LogInf['Password'].errors}">
+                     <div *ngIf="LogInSubmitted && LogInf['Password'].errors" class="invalid-feedback">
+                         <div class="error" *ngIf="LogInf['Password'].errors['required']">
+                             Please Enter Your Password
+                         </div>
+                     </div>
+                 </div>
+     
+                 <button type="submit" class="btn btn-primary">Submit</button>
+                 <p (click)="onSignIn()">Don't have any accouent <span>SignIn</span></p>
+             </form>
+         </div>
+        </div>
+     </div>
+</div>

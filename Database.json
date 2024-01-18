@@ -1,0 +1,56 @@
+{
+  "userSignUp": [
+    {
+      "FirstName": "demo",
+      "LastName": "test",
+      "Number": 1234567890,
+      "Email": "demo@gmail.com",
+      "Password": "123",
+      "id": 1
+    }
+  ],
+  "Products": [
+    {
+      "productName": "Tshirt",
+      "productColor": "Gray",
+      "productPrice": 599,
+      "id": 1
+    },
+    {
+      "productName": "Watch",
+      "productColor": "Black",
+      "productPrice": 12000,
+      "id": 3
+    },
+    {
+      "productName": "Jacket",
+      "productColor": "Brown",
+      "productPrice": 799,
+      "id": 4
+    },
+    {
+      "productName": "Jence",
+      "productColor": "Balck",
+      "productPrice": 1500,
+      "id": 5
+    },
+    {
+      "productName": "Shirt",
+      "productColor": "Balck",
+      "productPrice": 899,
+      "id": 6
+    },
+    {
+      "productName": "Shirt",
+      "productColor": "Brown",
+      "productPrice": 599,
+      "id": 7
+    },
+    {
+      "productName": "Tshirt",
+      "productColor": "Black",
+      "productPrice": 599,
+      "id": 8
+    }
+  ]
+}

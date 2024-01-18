@@ -1,0 +1,49 @@
+.card{
+ width: 32%;
+ margin: auto;
+ display: block;
+ margin-top: 4%;
+}
+
+.card-body{
+ padding: 0% 10% 8% 10%;
+}
+
+.form-group{
+    margin-top: 8%;
+    border-top: none;
+}
+
+.form-control{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+}
+
+::placeholder{
+    color: rgb(150, 150, 150);
+    font-size: 1.2vw;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 0%;
+    margin-top: 16%;
+}
+
+p{
+    font-size: 1vw;
+    margin-top: 4%;
+}
+
+p span{
+    font-size: 1.2vw;
+    color: blue;
+}
+
+.error{
+    font-size: 1vw;
+}
+
+
