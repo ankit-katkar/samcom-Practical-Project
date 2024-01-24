@@ -51,6 +51,54 @@
       "productColor": "Black",
       "productPrice": 599,
       "id": 8
+    },
+    {
+      "productName": "Puma Shoes",
+      "productColor": "Gray",
+      "productPrice": 12000,
+      "id": 9
+    },
+    {
+      "productName": "Nike Shoes",
+      "productColor": "Black",
+      "productPrice": 18000,
+      "id": 10
+    },
+    {
+      "productName": "Bata Shoes",
+      "productColor": "White",
+      "productPrice": 899,
+      "id": 11
+    },
+    {
+      "productName": "Titan Watch",
+      "productColor": "White",
+      "productPrice": 2199,
+      "id": 12
+    },
+    {
+      "productName": "Fastrack Watch",
+      "productColor": "Black",
+      "productPrice": 1599,
+      "id": 13
+    },
+    {
+      "productName": "Puma Tshirt",
+      "productColor": "White",
+      "productPrice": 599,
+      "id": 14
+    },
+    {
+      "productName": "Dell Laptop",
+      "productColor": "Gray",
+      "productPrice": 32999,
+      "id": 15
+    },
+    {
+      "productName": "Lenove Laptop",
+      "productColor": "Gray",
+      "productPrice": 69999,
+      "id": 16
     }
   ]
 }
